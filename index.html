@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input id="city-input" type="text" placeholder="Enter a city..." />
+        <input class="button" type="submit" value="Search" />
+      </form>
+      <h1 class="currentCity">Myrtle Beach</h1>
+      <section class="liveWeather">
+        <p class="current">
+          <span id="currentDay">Friday</span> at
+          <span id="currentTime">13:20</span>
+        </p>
+        <div class="weather-container">
+          <div class="weather-left">
+            <p>Humidity: <span class="boldNum">87%</span></p>
+            <p>Wind: <span class="boldNum">7.2 km/h</span></p>
+          </div>
+          <div class="weather-right">
+            <p class="currentConditions">Partly Cloudy</p>
+            🌤️
+            <span class="boldNum"
+              ><span class="currentTemp">56</span> &deg;</span
+            >
+          </div>
+        </div>
+      </section>
+      <ul class="forecast">
+        <li>
+          Saturday 🌤️ <br /><span class="boldNum">54 &deg;F</span> - 58 &deg;F
+        </li>
+        <li>
+          Sunday ☁️ <br /><span class="boldNum">51 &deg;F</span> - 56 &deg;F
+        </li>
+        <li>
+          Monday 🌦️ <br /><span class="boldNum">55 &deg;F</span> - 58 &deg;F
+        </li>
+        <li>
+          Tuesday ⛈️ <br /><span class="boldNum">56 &deg;F</span> - 60 &deg;F
+        </li>
+        <li>
+          Wednesday ☀️ <br /><span class="boldNum">60 &deg;F</span> - 65 &deg;F
+        </li>
+      </ul>
+    </div>
+    <footer>
+      <p>
+        This project was coded by <a href="">Michele Waite</a>, is on
+        <a href="">Github</a> and <a href="">hosted on Nelify</a>.
+      </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
